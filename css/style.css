@@ -1,2 +1,16 @@
 @import url(./reset.css);
 @import url(./fonts.css);
+
+.page {
+  font-family: "Gilroy";
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 44px;
+  color: #1f1f1f;
+}
+
+.container {
+  max-width: 1750px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
