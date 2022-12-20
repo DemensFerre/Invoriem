@@ -5,7 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>INVORIEM</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    />
     <link rel="stylesheet" href="./css/style.css" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.2/jquery.min.js"
+      defer
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      defer
+    ></script>
+    <script src="./js/main.js" defer></script>
   </head>
   <body class="page">
     <header class="header">
@@ -67,5 +84,57 @@
         </div>
       </div>
     </header>
+
+    <main class="main">
+      <section class="case-studies">
+        <div class="container">
+          <div class="case-studies__info">
+            <h2 class="case-studies__title title">Case Studies</h2>
+            <p class="case-studies__text text">
+              We deliver a unique and truly bespoke approach to delivering
+              international developments to market, with over 10 years success
+              around the world.
+            </p>
+          </div>
+        </div>
+
+        <div class="case-studies__wrapper">
+          <div class="case-studies__slider slider owl-carousel owl-theme">
+            <div class="slider__item">
+              <h3 class="slider__text">France</h3>
+              <img
+                src="./img/slider/slider-01.jpg"
+                alt="France"
+                class="slider__img"
+              />
+            </div>
+            <div class="slider__item">
+              <h3 class="slider__text">Moroco</h3>
+              <img
+                src="./img/slider/slider-02.jpg"
+                alt="Moroco"
+                class="slider__img"
+              />
+            </div>
+            <div class="slider__item">
+              <h3 class="slider__text">Portugal</h3>
+              <img
+                src="./img/slider/slider-03.jpg"
+                alt="Portugal"
+                class="slider__img"
+              />
+            </div>
+            <div class="slider__item">
+              <h3 class="slider__text">London</h3>
+              <img
+                src="./img/slider/slider-04.jpg"
+                alt="London"
+                class="slider__img"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
