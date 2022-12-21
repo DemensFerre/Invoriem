@@ -5,6 +5,19 @@ $(document).ready(function () {
   });
 });
 
+const scrollTo = () => {
+  const headerDown = document.querySelector(".header__down");
+  const caseStudies = document.querySelector(".case-studies");
+
+  headerDown.addEventListener("click", () => {
+    window.scroll({
+      left: 0,
+      top: caseStudies.offsetTop,
+      behavior: "smooth",
+    });
+  });
+};
+
 const playVideo = () => {
   const aboutVideo = document.querySelector(".about__video");
   const videoPlay = document.querySelector(".video__play");
@@ -18,3 +31,4 @@ const playVideo = () => {
 };
 
 playVideo();
+scrollTo();

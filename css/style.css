@@ -58,6 +58,7 @@ a {
 
 /* header start */
 .header {
+  position: relative;
   min-height: 100vh;
   background: url(../img/header/header-bg.jpg) no-repeat center;
   background-size: cover;
@@ -117,9 +118,19 @@ a {
 .btn_dark:hover .btn__arrow path {
   fill: #114455;
 }
+
+.header__down {
+  position: absolute;
+  left: 50%;
+  bottom: 20px;
+  transform: translateX(-50%);
+  cursor: pointer;
+}
+
 /* header end */
 
 /* slider start */
+
 .case-studies {
   padding: 180px 0;
 }
@@ -201,8 +212,6 @@ a {
 
 /* footer start */
 
-.footer {
-}
 .footer__wrapper {
   display: flex;
   flex-wrap: wrap;
