@@ -198,3 +198,34 @@ a {
 }
 
 /* about end */
+
+/* footer start */
+
+.footer {
+}
+.footer__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 200px;
+}
+.footer__copy {
+  font-size: 20px;
+  line-height: 36px;
+}
+.footer__contacts {
+  display: flex;
+  align-items: center;
+}
+.footer__email {
+  margin-right: 104px;
+  font-size: 20px;
+  line-height: 36px;
+}
+.footer__socials {
+  display: flex;
+  column-gap: 26px;
+}
+
+/* footer end */
