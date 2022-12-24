@@ -1,7 +1,25 @@
 $(document).ready(function () {
   $(".owl-carousel").owlCarousel({
-    margin: 48,
+    loop: true,
     dots: false,
+    responsive: {
+      0: {
+        items: 2,
+        margin: 180,
+      },
+      600: {
+        margin: 80,
+      },
+
+      701: {
+        items: 2,
+      },
+
+      1301: {
+        margin: 48,
+        items: 3,
+      },
+    },
   });
 });
 
@@ -30,5 +48,19 @@ const playVideo = () => {
   });
 };
 
+const openBurger = function () {
+  const burger = document.querySelectorAll(".burger");
+  const mobileMenu = document.querySelector(".mobile-menu");
+  const page = document.querySelector(".page");
+
+  burger.forEach((item) => {
+    item.addEventListener("click", () => {
+      mobileMenu.classList.toggle("mobile-menu_active");
+      page.classList.toggle("page_active");
+    });
+  });
+};
+
 playVideo();
 scrollTo();
+openBurger();
